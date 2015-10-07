@@ -15,7 +15,7 @@ export class HomeComponent {
   strength(){
    return this.bench / this.bodyweight
   }
-	sayHello() {
+	measure() {
 		if(this.gender == "Male"){
       if(this.strength() < 1.25){
 				this.performance = "Poor"
