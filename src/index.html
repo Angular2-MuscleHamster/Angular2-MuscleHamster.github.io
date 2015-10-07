@@ -10,6 +10,8 @@
   <script src="../../node_modules/angular2/bundles/router.dev.js"></script>
 	<script>
 	  System.config({
+  	    transpiler: 'typescript',
++	    typescriptOptions: { emitDecoratorMetadata: true },
 	    packages: {'app': {defaultExtension: 'js'}}
 	  });
      	  System.import('app/bootstrap');
