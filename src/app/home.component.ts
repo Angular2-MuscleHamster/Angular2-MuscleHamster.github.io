@@ -2,13 +2,7 @@ import {Component, FORM_DIRECTIVES, View} from 'angular2/angular2';
 
 @Component({ selector: 'my-home' })
 @View({
-	template: `
-		<h2>Home of the Bench Press Monitor</h2>
-		<div>Gender Selected is {{gender}}</div>
-		<input [(ng-model)]="gender" />
-		<button (click)="sayHello()">Say Hello</button>
-		<p>{{performance}}</p>
-	`,
+	templateUrl: './app/views/form.html',
 	directives: [FORM_DIRECTIVES]
 })
 export class HomeComponent {

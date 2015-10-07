@@ -1,0 +1,14 @@
+<h2>Home of the Bench Press Monitor</h2>
+<div>Gender Selected is {{gender}}</div>
+<div class="main-form">
+  <form>
+    <label><input type="radio" name="sex" [(ng-model)]="gender" [value]="Male" checked> Male</label><br />
+    <label><input type="radio" [(ng-model)]="gender" name="sex" [value]="Female"> Female</label><br />
+    <label>Body Weight: <input type="number" name="body_weight" /></label><br />
+    <label>Benchpress Weight: <input type="number" name="benchpress_weight" /></label><br />
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+<button (click)="sayHello()">Say Hello</button>
+<p>{{performance}}</p>
+<p>{{gender}}</p>
