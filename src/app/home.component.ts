@@ -11,6 +11,7 @@ export class HomeComponent {
 	public bench = 0;
 	public count = 0;
 	public performance = "";
+	public img = "";
 
   strength(){
    return this.bench / this.bodyweight

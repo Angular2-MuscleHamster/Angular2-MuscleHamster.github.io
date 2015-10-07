@@ -5,16 +5,16 @@
 	<title>The Muscle Hamster</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css">
-	<script src="../../node_modules/systemjs/dist/system.src.js"></script>
-  <script src="../../node_modules/angular2/bundles/angular2.dev.js"></script>
-  <script src="../../node_modules/angular2/bundles/router.dev.js"></script>
+	<script src="https://code.angularjs.org/tools/system.js"></script>
+	<script src="https://code.angularjs.org/tools/typescript.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-alpha.39/angular2.dev.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-alpha.39/router.dev.js"></script>
 	<script>
-	  System.config({
-  	    transpiler: 'typescript',
-+	    typescriptOptions: { emitDecoratorMetadata: true },
-	    packages: {'app': {defaultExtension: 'js'}}
-	  });
-     	  System.import('app/bootstrap');
+	 		System.config({
+				transpiler: 'typescript',
+				typescriptOptions: { emitDecoratorMetadata: true }
+			});
+			System.import('app/bootstrap.ts');
 	</script>
 </head>
 
