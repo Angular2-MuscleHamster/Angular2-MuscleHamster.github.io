@@ -6,9 +6,9 @@ import {Component, FORM_DIRECTIVES, View} from 'angular2/angular2';
 	directives: [FORM_DIRECTIVES]
 })
 export class HomeComponent {
-	public gender = 'Male';
-	public bodyweight = 180;
-	public bench = 380;
+	public gender = '';
+	public bodyweight = 0;
+	public bench = 0;
 	public count = 0;
 	public performance = "";
 
