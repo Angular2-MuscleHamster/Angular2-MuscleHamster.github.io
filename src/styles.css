@@ -31,3 +31,9 @@ my-home {
 .main-form {
   text-align: left;
 }
+
+img {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}

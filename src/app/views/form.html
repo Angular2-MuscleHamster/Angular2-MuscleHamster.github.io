@@ -14,9 +14,8 @@
     <div class="form-group">
       <label>Benchpress Weight: <input type="number" class="form-control" name="benchpress_weight" [(ng-model)]="bench" /></label><br />
     </div>
-    <input class="btn btn-primary" type="submit" value="Submit" (click)="sayHello()"/>
+    <input class="btn btn-primary" type="submit" value="Submit" (click)="measure()"/>
   </form>
 </div>
-<button class="btn" (click)="sayHello()">Say Hello</button>
 <p>{{performance}}</p>
-<img [attr.src]="img">
+<img [attr.src]="img" [attr.alt]="performance">
