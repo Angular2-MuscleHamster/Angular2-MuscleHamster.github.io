@@ -1,6 +1,6 @@
 <h2>Home of the Bench Press Monitor</h2>
 <div>Gender Selected is {{gender}}</div>
-<div class="main-form col-xs-offset-4 col-xs-8">
+<div class="main-form col-xs-6">
   <form>
     <div class="form-group">
       <button (click)="gender = 'Male'">Male</button>
@@ -15,5 +15,7 @@
     <input class="btn btn-primary" type="submit" value="Submit" (click)="measure()"/>
   </form>
 </div>
-<p>{{performance}}</p>
-<img [attr.src]="img" [attr.alt]="performance">
+<div class="col-xs-6">
+  <p>{{performance}}</p>
+  <img [attr.src]="img" [attr.alt]="performance">
+</div>
