@@ -1,14 +1,22 @@
 <h2>Home of the Bench Press Monitor</h2>
 <div>Gender Selected is {{gender}}</div>
-<div class="main-form">
+<div class="main-form col-xs-offset-4 col-xs-8">
   <form>
-    <button (click)="gender = 'Male'">Male</button>
-    <button (click)="gender = 'Female'">Female</button>
-    <label>Body Weight: <input type="number" name="body_weight" [(ng-model)]="bodyweight" /></label><br />
-    <label>Benchpress Weight: <input type="number" name="benchpress_weight" [(ng-model)]="bench"/></label><br />
-    <input type="submit" value="Submit" (click)="sayHello()"/>
+    <div class="form-group">
+      <button (click)="gender = 'Male'">Male</button>
+    </div>
+    <div class="form-group">
+      <button (click)="gender = 'Female'">Female</button>
+    </div>
+    <div class="form-group">
+      <label>Body Weight: <input type="number" class="form-control" name="body_weight" [(ng-model)]="bodyweight" /></label><br />
+    </div>
+    <div class="form-group">
+      <label>Benchpress Weight: <input type="number" class="form-control" name="benchpress_weight" [(ng-model)]="bench" /></label><br />
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit" (click)="sayHello()"/>
   </form>
 </div>
-<button (click)="sayHello()">Say Hello</button>
+<button class="btn" (click)="sayHello()">Say Hello</button>
 <p>{{performance}}</p>
-<p>{{gender}}</p>
+<img [attr.src]="img">
