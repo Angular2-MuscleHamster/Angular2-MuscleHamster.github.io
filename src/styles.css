@@ -1,3 +1,6 @@
+body {
+  background-color: lightblue;
+}
 .jumbotron {
   position: relative;
   height: 30vh;
@@ -23,4 +26,8 @@ my-home {
 }
 my-home {
   text-align: center;
+}
+
+.main-form {
+  text-align: left;
 }
