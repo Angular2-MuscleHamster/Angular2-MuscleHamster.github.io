@@ -4,29 +4,48 @@ import {Component, FORM_DIRECTIVES, View} from 'angular2/angular2';
 @View({
 	template: `
 		<h2>Home of the Muscle Hamster</h2>
-		<div>I don't know about this {{name}} person</div>
-		<input [(ng-model)]="name" />
+		<div>Gender Selected is {{gender}}</div>
+		<input [(ng-model)]="gender" />
 		<button (click)="sayHello()">Say Hello</button>
-		<button (click)="sayWhatUp()">Say What Up</button>
-		<p>{{count}}</p>
-		<p>{{message}}</p>
-		<p>{{whatup}}</p>
+		<p>{{performance}}</p>
 	`,
 	directives: [FORM_DIRECTIVES]
 })
 export class HomeComponent {
-	public name = 'Brian Gates';
-	public message = '';
-	public whatup = "What's Up Orlando!!!";
+	public gender = 'Male';
+	public bodyweight = 180;
+	public bench = 380;
 	public count = 0;
+	public performance = "";
 
 	sayHello() {
-		this.message = 'Hello ' + this.name + '!';
-		this.count++
-	}
-
-	sayWhatUp() {
-	  this.whatup = 'What Up ' + this.name + '!';
-		this.count++
+		if(this.gender == "Male"){
+			if(this.bench < this.bodyweight * 1.25){
+				this.performance = "Poor"
+			}
+			else if(this.bench >= this.bodyweight * 2) {
+				this.performance = "ARNOLD"
+			}
+			else if(this.bench >= this.bodyweight * 1.75){
+				this.performance = "Excellent"
+			}
+			else if(this.bench >= this.bodyweight * 1.25){
+				this.performance = "Good"
+			}
+		}
+		else {
+			if(this.bench < this.bodyweight * 0.8){
+				this.performance = "Poor"
+			}
+			else if(this.bench >= this.bodyweight * 1.25) {
+				this.performance = "RONDA"
+			}
+			else if(this.bench >= this.bodyweight * 1){
+				this.performance = "Excellent"
+			}
+			else if(this.bench >= this.bodyweight * 0.8){
+				this.performance = "Good"
+			}
+		}
 	}
 }
