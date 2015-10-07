@@ -1,25 +1,12 @@
 {
   "name": "Angular2-MuscleHamster.github.io",
   "version": "1.0.0",
-  "description": "### Measure up against the Muscle Hamster",
-  "main": "index.js",
   "scripts": {
     "postinstall": "npm run tsd",
     "tsd": "tsd link --config src/tsd.json",
     "tsc": "tsc -p src -w",
     "start": "live-server --open=src"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Angular2-MuscleHamster/Angular2-MuscleHamster.github.io.git"
-  },
-  "keywords": [],
-  "author": "loganarnett bgates",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Angular2-MuscleHamster/Angular2-MuscleHamster.github.io/issues"
-  },
-  "homepage": "https://github.com/Angular2-MuscleHamster/Angular2-MuscleHamster.github.io",
   "dependencies": {
     "angular2": "^2.0.0-alpha.39",
     "systemjs": "^0.19.3"
