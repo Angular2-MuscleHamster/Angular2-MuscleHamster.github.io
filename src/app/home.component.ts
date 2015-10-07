@@ -3,7 +3,7 @@ import {Component, FORM_DIRECTIVES, View} from 'angular2/angular2';
 @Component({ selector: 'my-home' })
 @View({
 	template: `
-		<h2>Home of the Muscle Hamster</h2>
+		<h2>Home of the Bench Press Monitor</h2>
 		<div>Gender Selected is {{gender}}</div>
 		<input [(ng-model)]="gender" />
 		<button (click)="sayHello()">Say Hello</button>

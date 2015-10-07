@@ -1,0 +1,26 @@
+.jumbotron {
+  position: relative;
+  height: 30vh;
+}
+.jumbotron h1 {
+  text-align: center;
+}
+#firstHamster {
+  width: 10%;
+  position: absolute;
+  left: 2%;
+  top: 5%;
+}
+#secondHamster {
+  width: 10%;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+my-home {
+  width: 85%;
+  margin: 0 auto;
+}
+my-home {
+  text-align: center;
+}
